@@ -36,11 +36,11 @@ The study most directly comparable to ours is a recent systematic review that ma
 
 ### 2.3 Citation counts and research evaluation
 
-Citation counts remain the most widely used proxy of academic influence, despite their known biases [19, 20]. A consistent finding in this literature is that citation counts carry a strong time-accumulation effect: recently published papers have had less time to gather citations, so raw counts systematically understate the influence of newer work [21]. Factors associated with citations include topic, author and journal reputation, open access status and article length [20], and there is some evidence that method choice matters for citations in specific fields [22]. Any comparison of citation outcomes across method categories must therefore hold article age and journal constant, and results should be read as descriptive associations rather than causal effects. Citation data also present a statistical challenge of their own: counts are non-negative integers, heavily right-skewed, and overdispersed relative to a Poisson distribution, which is why count-data regressions such as the negative binomial, rather than ordinary least squares, are the standard tool for this kind of question. That is the approach we take.
+Citation counts remain the most widely used proxy of academic influence, despite their known biases [19-20]. A consistent finding in this literature is that citation counts carry a strong time-accumulation effect: recently published papers have had less time to gather citations, so raw counts systematically understate the influence of newer work [21]. Factors associated with citations include topic, author and journal reputation, open access status and article length [20], and there is some evidence that method choice matters for citations in specific fields [22]. Any comparison of citation outcomes across method categories must therefore hold article age and journal constant, and results should be read as descriptive associations rather than causal effects. Citation data also present a statistical challenge of their own: counts are non-negative integers, heavily right-skewed, and overdispersed relative to a Poisson distribution, which is why count-data regressions such as the negative binomial, rather than ordinary least squares, are the standard tool for this kind of question. That is the approach we take.
 
 ### 2.4 Research gap
 
-Three gaps follow from this review. First, existing methodological-mapping studies either target adjacent fields with small samples [18] or measure method-level change in mature disciplines [16, 17]; none provides a systematic, diachronic, large-scale map of method categories in a fast-growing applied field such as AIGC-driven e-commerce user behavior research. Second, the four-way scheme we propose, which adds a computational category central to AIGC work, has not been quantified over time in any corpus. Third, the association between method category and citation outcomes, holding article age and journal constant, has not been estimated in this literature. This article addresses all three.
+Three gaps follow from this review. First, existing methodological-mapping studies either target adjacent fields with small samples [18] or measure method-level change in mature disciplines [16-17]; none provides a systematic, diachronic, large-scale map of method categories in a fast-growing applied field such as AIGC-driven e-commerce user behavior research. Second, the four-way scheme we propose, which adds a computational category central to AIGC work, has not been quantified over time in any corpus. Third, the association between method category and citation outcomes, holding article age and journal constant, has not been estimated in this literature. This article addresses all three.
 
 ## 3 Method
 
@@ -78,11 +78,11 @@ Two boundary rules reduce ambiguity. First, critical or conceptual essays that d
 
 ### 3.4 Coding and reliability
 
-Coding proceeded in two stages. In the first stage we applied a rule-based screen to each title and abstract, assigning a preliminary category from method vocabulary (for example questionnaire, experiment and structural equation for quantitative empirical; machine learning, neural network and sentiment for computational; interview, grounded theory and case study for qualitative; framework, review and theory for conceptual/review). In the second stage the two authors independently re-coded all articles assigned to the three minority categories (computational, conceptual/review and qualitative) together with a random sample of 50 articles from the dominant quantitative empirical class, using the definitions in Table 1 and the boundary rules above. The coders worked blind to each other's decisions. Inter-coder agreement on the four-category scheme reached Cohen's kappa = 0.89 over the jointly coded set, which corresponds to strong agreement under the Landis and Koch benchmarks [27, 28]. The disagreements were resolved by discussion. The coding guide followed standard practice for content-analytic coding [29], and we treat the qualitative category, in particular, as subject to wider coding uncertainty because it is so small. The first-stage rule-based labels were used only to surface candidates, not as final labels. The two-stage design was chosen deliberately. A purely rule-based approach is fast but unreliable at the boundaries, because method vocabulary in abstracts is loose: the word model appears in theory papers, computational papers and statistical papers alike, and interview can describe a data source rather than a method. A purely manual approach is more accurate but does not scale to a corpus of this size. The hybrid we adopt uses the dictionary only to surface candidates for the minority categories, where precision matters most, and reserves human judgement for the final labels.
+Coding proceeded in two stages. In the first stage we applied a rule-based screen to each title and abstract, assigning a preliminary category from method vocabulary (for example questionnaire, experiment and structural equation for quantitative empirical; machine learning, neural network and sentiment for computational; interview, grounded theory and case study for qualitative; framework, review and theory for conceptual/review). In the second stage the two authors independently re-coded all articles assigned to the three minority categories (computational, conceptual/review and qualitative) together with a random sample of 50 articles from the dominant quantitative empirical class, using the definitions in Table 1 and the boundary rules above. The coders worked blind to each other's decisions. Inter-coder agreement on the four-category scheme reached Cohen's kappa = 0.89 over the jointly coded set, which corresponds to strong agreement under the Landis and Koch benchmarks [27-28]. The disagreements were resolved by discussion. The coding guide followed standard practice for content-analytic coding [29], and we treat the qualitative category, in particular, as subject to wider coding uncertainty because it is so small. The first-stage rule-based labels were used only to surface candidates, not as final labels. The two-stage design was chosen deliberately. A purely rule-based approach is fast but unreliable at the boundaries, because method vocabulary in abstracts is loose: the word model appears in theory papers, computational papers and statistical papers alike, and interview can describe a data source rather than a method. A purely manual approach is more accurate but does not scale to a corpus of this size. The hybrid we adopt uses the dictionary only to surface candidates for the minority categories, where precision matters most, and reserves human judgement for the final labels.
 
 ### 3.5 Analytical strategy
 
-The analysis proceeds in three descriptive steps. First, we describe the overall distribution of method categories and their annual evolution from 2015 to 2026. Second, we apply Mann-Kendall trend tests, with tie correction, to annual counts and annual shares, treating the results as descriptive indicators of direction rather than strict inference [31, 32]. We use annual counts and shares as the primary specification and report both. Third, we estimate negative binomial regressions of paper-level citation counts on method category, controlling for article age (log months since publication) and journal, with standard errors clustered by journal [33]. The negative binomial specification is preferred over Poisson because citation counts are strongly overdispersed [34]. All estimates are presented as descriptive associations, not causal effects: article age and journal are the dominant predictors of citations, and our interest is whether any method category carries an independent citation association once these are held constant.
+The analysis proceeds in three descriptive steps. First, we describe the overall distribution of method categories and their annual evolution from 2015 to 2026. Second, we apply Mann-Kendall trend tests, with tie correction, to annual counts and annual shares, treating the results as descriptive indicators of direction rather than strict inference [31-32]. We use annual counts and shares as the primary specification and report both. Third, we estimate negative binomial regressions of paper-level citation counts on method category, controlling for article age (log months since publication) and journal, with standard errors clustered by journal [33]. The negative binomial specification is preferred over Poisson because citation counts are strongly overdispersed [34]. All estimates are presented as descriptive associations, not causal effects: article age and journal are the dominant predictors of citations, and our interest is whether any method category carries an independent citation association once these are held constant.
 
 ## 4 Results
 
@@ -92,7 +92,7 @@ The analytical corpus comprises 187 articles published between 2015 and 2026 in 
 
 ### 4.2 Method category distribution
 
-Table 2 reports the distribution. Quantitative empirical work dominates at 142 articles (75.9%), followed by conceptual/review (26, 13.9%), computational (18, 9.6%) and qualitative (1, 0.5%). The field is therefore methodologically concentrated: three of every four articles test hypotheses with quantitative data, and genuine qualitative work is essentially absent, represented by a single article. A small number of articles combine methods, for example a survey followed by a text-mining analysis of open-ended responses. Following the rule set out in Section 3.3, these were assigned to the category on which their main contribution depends, which in practice placed almost all of them in the quantitative or computational category rather than creating a separate mixed-method class. The categories correspond to recognisable research programmes: quantitative work includes survey and experimental studies of chatbot disclosure and virtual influencer anthropomorphism [3, 4], conceptual work includes treatments of AI-generated product reviews [38], computational work spans deep learning recommendation and sentiment analysis of customer feedback [6, 39], and the single qualitative study is an interview-based examination of consumer responses to virtual influencers [40].
+Table 2 reports the distribution. Quantitative empirical work dominates at 142 articles (75.9%), followed by conceptual/review (26, 13.9%), computational (18, 9.6%) and qualitative (1, 0.5%). The field is therefore methodologically concentrated: three of every four articles test hypotheses with quantitative data, and genuine qualitative work is essentially absent, represented by a single article. A small number of articles combine methods, for example a survey followed by a text-mining analysis of open-ended responses. Following the rule set out in Section 3.3, these were assigned to the category on which their main contribution depends, which in practice placed almost all of them in the quantitative or computational category rather than creating a separate mixed-method class. The categories correspond to recognisable research programmes: quantitative work includes survey and experimental studies of chatbot disclosure and virtual influencer anthropomorphism [3-4], conceptual work includes treatments of AI-generated product reviews [38], computational work spans deep learning recommendation and sentiment analysis of customer feedback [6, 39], and the single qualitative study is an interview-based examination of consumer responses to virtual influencers [40].
 
 **Table 2.** Number and share of articles by method category (2015-2026)
 
@@ -166,13 +166,13 @@ The study provides the first systematic map of how AIGC-driven e-commerce user b
 
 This picture is consistent with, and extends, the LIS method-mapping study by Mirza and colleagues [18], which likewise found a field in which interpretive and conceptual work persisted alongside limited explicit quantitative engagement. Our study adds scale (187 articles against a much smaller purposive sample), adds a computational category that is central to the AIGC setting, and shows that the method mix can remain stable even under a strong exogenous technological shock.
 
-A complementary observation comes from the Chinese-language literature, which we reviewed for context but did not include in the main corpus because it is indexed in CSSCI rather than SSCI. The Chinese CSSCI literature on this topic is even smaller, roughly a dozen articles since 2023, concentrated on AI livestream anchors, AI customer service and AI review summarisation. It is almost entirely quantitative: experimental and survey studies of AI versus human anchors [47, 48] and computational work on fake review detection [49], with qualitative research essentially absent. The methodological concentration we document internationally is thus reproduced, in a more extreme form, in the Chinese-language literature. That the same shape appears in two indexing systems with different editorial cultures suggests the pattern reflects something about the object of study and its pace, rather than an artefact of any single database or national tradition.
+A complementary observation comes from the Chinese-language literature, which we reviewed for context but did not include in the main corpus because it is indexed in CSSCI rather than SSCI. The Chinese CSSCI literature on this topic is even smaller, roughly a dozen articles since 2023, concentrated on AI livestream anchors, AI customer service and AI review summarisation. It is almost entirely quantitative: experimental and survey studies of AI versus human anchors [47-48] and computational work on fake review detection [49], with qualitative research essentially absent. The methodological concentration we document internationally is thus reproduced, in a more extreme form, in the Chinese-language literature. That the same shape appears in two indexing systems with different editorial cultures suggests the pattern reflects something about the object of study and its pace, rather than an artefact of any single database or national tradition.
 
 ### 5.2 Explaining the methodological concentration
 
 Why does a technology-driven field settle so heavily on hypothesis testing with quantitative instruments? We offer an explanation in descriptive terms rather than as a tested theory. A new technology first generates a wave of studies that can be run quickly with existing instruments. Surveys and experiments are templates that adapt readily to a new object such as an AI shopping assistant or a virtual influencer, and the field's dominant theoretical vehicles, the technology acceptance model and its successors, together with stimulus-organism-response frameworks, are built for exactly this kind of rapid redeployment [35-37]. Computational work requires technical infrastructure and labelled data, and qualitative work requires slow field access, both of which arrive later than the first quantitative wave. This speed asymmetry is consistent with what we observe: computational work is present but small and clusters in the very recent years, and qualitative work is effectively absent. We do not claim this mechanism is the only one, nor that we have tested it; it is a reading of the pattern that future work could test against other applied fields. A further consideration is the incentive structure of the applied venues themselves. The dominant journals in the corpus are e-commerce, consumer-behavior and information systems outlets whose review norms reward clean hypothesis tests with well-established instruments, which lowers the cost of quantitative work and raises the cost of the slower, more interpretively demanding alternatives. This is a supply-side complement to the demand-side story above: both the object of study and the publication environment push the field toward a single method family. Read against Shneider's [15] stage model, the field sits somewhere between conceptualisation and investigation: the conceptual and review work of the early years has not yet given way to a mature portfolio in which tool development and investigation coexist, and the recent, still-small computational stream is the closest thing to a tool-development stage.
 
-The pattern also echoes a broader observation about consumer-facing AI research, which has largely proceeded through acceptance and trust frameworks rather than through open-ended inquiry into how people actually experience generative systems [41, 42, 43, 46].
+The pattern also echoes a broader observation about consumer-facing AI research, which has largely proceeded through acceptance and trust frameworks rather than through open-ended inquiry into how people actually experience generative systems [41-43, 46].
 
 ### 5.3 Implications for research evaluation and training
 
@@ -192,100 +192,100 @@ This study maps the methodological approaches of AIGC-driven e-commerce user beh
 
 ## References
 
-[1] Dwivedi YK, Kshetri N, Hughes L, et al. (2023) 'So what if ChatGPT wrote it?' Multidisciplinary perspectives on opportunities, challenges and implications of generative conversational AI for research, practice and policy. *International Journal of Information Management* 71: 102642.
+1. Dwivedi YK, Kshetri N, Hughes L, et al. 'So what if ChatGPT wrote it?' Multidisciplinary perspectives on opportunities, challenges and implications of generative conversational AI for research, practice and policy. *International Journal of Information Management* 2023; 71: 102642.
 
-[2] Huang MH and Rust RT (2021) A strategic framework for artificial intelligence in marketing. *Journal of the Academy of Marketing Science* 49(1): 30-50.
+2. Huang MH and Rust RT. A strategic framework for artificial intelligence in marketing. *Journal of the Academy of Marketing Science* 2021; 49(1): 30–50.
 
-[3] Cheng X, Bao Y, Zarifis A, Gong W and Mou J (2021) Exploring consumers' response to text-based chatbots in e-commerce: the moderating role of task complexity and chatbot disclosure. *Internet Research* 32(2): 496-517.
+3. Cheng X, Bao Y, Zarifis A, et al. Exploring consumers' response to text-based chatbots in e-commerce: the moderating role of task complexity and chatbot disclosure. *Internet Research* 2021; 32(2): 496–517.
 
-[4] Chen H, Shao B, Yang X, Kang W and Fan W (2024) Avatars in live streaming commerce: the influence of anthropomorphism on consumers' willingness to accept virtual live streamers. *Computers in Human Behavior* 156: 108216.
+4. Chen H, Shao B, Yang X, et al. Avatars in live streaming commerce: the influence of anthropomorphism on consumers' willingness to accept virtual live streamers. *Computers in Human Behavior* 2024; 156: 108216.
 
-[5] Sidlauskiene J, Joye Y and Auruškevičienė V (2023) AI-based chatbots in conversational commerce and their effects on product and price perceptions. *Electronic Markets* 33(1): 24.
+5. Sidlauskiene J, Joye Y and Auruškevičienė V. AI-based chatbots in conversational commerce and their effects on product and price perceptions. *Electronic Markets* 2023; 33(1): 24.
 
-[6] Guan Y, Wei Q and Chen G (2019) Deep learning based personalized recommendation with multi-view information integration. *Decision Support Systems* 118: 58-69.
+6. Guan Y, Wei Q and Chen G. Deep learning based personalized recommendation with multi-view information integration. *Decision Support Systems* 2019; 118: 58–69.
 
-[7] Kuhn TS (1962) *The Structure of Scientific Revolutions*. Chicago: University of Chicago Press.
+7. Kuhn TS. *The Structure of Scientific Revolutions*. Chicago: University of Chicago Press, 1962.
 
-[8] Orlikowski WJ and Baroudi JJ (1991) Studying information technology in organizations: research approaches and assumptions. *Information Systems Research* 2(1): 1-28.
+8. Orlikowski WJ and Baroudi JJ. Studying information technology in organizations: research approaches and assumptions. *Information Systems Research* 1991; 2(1): 1–28.
 
-[9] Burrell G and Morgan G (1979) *Sociological Paradigms and Organisational Analysis*. London: Heinemann.
+9. Burrell G and Morgan G. *Sociological Paradigms and Organisational Analysis*. London: Heinemann, 1979.
 
-[10] Mingers J (2001) Combining IS research methods: towards a pluralist methodology. *Information Systems Research* 12(3): 240-259.
+10. Mingers J. Combining IS research methods: towards a pluralist methodology. *Information Systems Research* 2001; 12(3): 240–259.
 
-[11] Hevner AR, March ST, Park J and Ram S (2004) Design science in information systems research. *MIS Quarterly* 28(1): 75-105.
+11. Hevner AR, March ST, Park J, et al. Design science in information systems research. *MIS Quarterly* 2004; 28(1): 75–105.
 
-[12] Lazer D, Pentland A, Adamic L, et al. (2009) Computational social science. *Science* 323(5915): 721-723.
+12. Lazer D, Pentland A, Adamic L, et al. Computational social science. *Science* 2009; 323(5915): 721–723.
 
-[13] Small H (1973) Co-citation in the scientific literature: a new measure of the relationship between two documents. *Journal of the American Society for Information Science* 24(4): 265-269.
+13. Small H. Co-citation in the scientific literature: a new measure of the relationship between two documents. *Journal of the American Society for Information Science* 1973; 24(4): 265–269.
 
-[14] van Eck NJ and Waltman L (2010) Software survey: VOSviewer, a computer program for bibliometric mapping. *Scientometrics* 84(2): 523-538.
+14. van Eck NJ and Waltman L. Software survey: VOSviewer, a computer program for bibliometric mapping. *Scientometrics* 2010; 84(2): 523–538.
 
-[15] Shneider AM (2009) Four stages of a scientific discipline; four types of scientist. *Trends in Biochemical Sciences* 34(5): 217-223.
+15. Shneider AM. Four stages of a scientific discipline; four types of scientist. *Trends in Biochemical Sciences* 2009; 34(5): 217–223.
 
-[16] Zhang C, Mao Y and Peng S (2024) Data-driven evolution of library and information science research methods (1990-2022): a perspective based on fine-grained method entities. *Scientometrics* 129(12): 7889-7912.
+16. Zhang C, Mao Y and Peng S. Data-driven evolution of library and information science research methods (1990-2022): a perspective based on fine-grained method entities. *Scientometrics* 2024; 129(12): 7889–7912.
 
-[17] Hao J and Zhang C (2026) Evolution of research method usage across the academic careers of library and information science scholars. *Scientometrics*. DOI: 10.1007/s11192-026-05652-8.
+17. Hao J and Zhang C. Evolution of research method usage across the academic careers of library and information science scholars. *Scientometrics*. Epub ahead of print 2026. DOI: 10.1007/s11192-026-05652-8.
 
-[18] Mirza KB, Khan A and Ahmad P (2026) Mapping emerging research methodologies in Library and Information Science (2015-2023): a systematic review. *Journal of Information Science*. DOI: 10.1177/01655515251388623.
+18. Mirza KB, Khan A and Ahmad P. Mapping emerging research methodologies in Library and Information Science (2015-2023): a systematic review. *Journal of Information Science*. Epub ahead of print 2026. DOI: 10.1177/01655515251388623.
 
-[19] Bornmann L and Daniel HD (2008) What do citation counts measure? A review of studies on citing behavior. *Journal of Documentation* 64(1): 45-80.
+19. Bornmann L and Daniel HD. What do citation counts measure? A review of studies on citing behavior. *Journal of Documentation* 2008; 64(1): 45–80.
 
-[20] Tahamtan I, Safipour Afshar A and Ahamdzadeh K (2016) Factors affecting number of citations: a comprehensive review of the literature. *Scientometrics* 107(3): 1195-1225.
+20. Tahamtan I, Safipour Afshar A and Ahamdzadeh K. Factors affecting number of citations: a comprehensive review of the literature. *Scientometrics* 2016; 107(3): 1195–1225.
 
-[21] Wang J (2013) Citation time window choice for research impact evaluation. *Scientometrics* 94(3): 851-872.
+21. Wang J. Citation time window choice for research impact evaluation. *Scientometrics* 2013; 94(3): 851–872.
 
-[22] Ullah A, Hayat S and Ameen K (2025) Impact of research characteristics and methodologies used in LIS articles on citation count. *Journal of Librarianship and Information Science* 57(4): 1192-1204.
+22. Ullah A, Hayat S and Ameen K. Impact of research characteristics and methodologies used in LIS articles on citation count. *Journal of Librarianship and Information Science* 2025; 57(4): 1192–1204.
 
-[23] Donthu N, Kumar S, Mukherjee D, Pandey N and Lim WM (2021) How to conduct a bibliometric analysis: an overview and guidelines. *Journal of Business Research* 133: 285-296.
+23. Donthu N, Kumar S, Mukherjee D, et al. How to conduct a bibliometric analysis: an overview and guidelines. *Journal of Business Research* 2021; 133: 285–296.
 
-[24] Priem J, Piwowar H and Orr R (2022) OpenAlex: a fully-open index of scholarly works, authors, venues, institutions, and concepts. arXiv:2205.01833.
+24. Priem J, Piwowar H and Orr R. OpenAlex: a fully-open index of scholarly works, authors, venues, institutions, and concepts. arXiv:2205.01833, 2022.
 
-[25] Page MJ, McKenzie JE, Bossuyt PM, et al. (2021) The PRISMA 2020 statement: an updated guideline for reporting systematic reviews. *BMJ* 372: n71.
+25. Page MJ, McKenzie JE, Bossuyt PM, et al. The PRISMA 2020 statement: an updated guideline for reporting systematic reviews. *BMJ* 2021; 372: n71.
 
-[26] Moher D, Liberati A, Tetzlaff J, Altman DG and The PRISMA Group (2009) Preferred reporting items for systematic reviews and meta-analyses: the PRISMA statement. *PLoS Medicine* 6(7): e1000097.
+26. Moher D, Liberati A, Tetzlaff J, et al. Preferred reporting items for systematic reviews and meta-analyses: the PRISMA statement. *PLoS Medicine* 2009; 6(7): e1000097.
 
-[27] Landis JR and Koch GG (1977) The measurement of observer agreement for categorical data. *Biometrics* 33(1): 159-174.
+27. Landis JR and Koch GG. The measurement of observer agreement for categorical data. *Biometrics* 1977; 33(1): 159–174.
 
-[28] Cohen J (1960) A coefficient of agreement for nominal scales. *Educational and Psychological Measurement* 20(1): 37-46.
+28. Cohen J. A coefficient of agreement for nominal scales. *Educational and Psychological Measurement* 1960; 20(1): 37–46.
 
-[29] Krippendorff K (2004) *Content Analysis: An Introduction to Its Methodology*. 2nd ed. Thousand Oaks, CA: SAGE.
+29. Krippendorff K. *Content Analysis: An Introduction to Its Methodology*. 2nd ed. Thousand Oaks, CA: SAGE, 2004.
 
-[30] Braun V and Clarke V (2006) Using thematic analysis in psychology. *Qualitative Research in Psychology* 3(2): 77-101.
+30. Braun V and Clarke V. Using thematic analysis in psychology. *Qualitative Research in Psychology* 2006; 3(2): 77–101.
 
-[31] Mann HB (1945) Nonparametric tests against trend. *Econometrica* 13(3): 245-259.
+31. Mann HB. Nonparametric tests against trend. *Econometrica* 1945; 13(3): 245–259.
 
-[32] Kendall MG (1975) *Rank Correlation Methods*. 4th ed. London: Charles Griffin.
+32. Kendall MG. *Rank Correlation Methods*. 4th ed. London: Charles Griffin, 1975.
 
-[33] Cameron AC and Trivedi PK (2013) *Regression Analysis of Count Data*. 2nd ed. Cambridge: Cambridge University Press.
+33. Cameron AC and Trivedi PK. *Regression Analysis of Count Data*. 2nd ed. Cambridge: Cambridge University Press, 2013.
 
-[34] Hilbe JM (2011) *Negative Binomial Regression*. 2nd ed. Cambridge: Cambridge University Press.
+34. Hilbe JM. *Negative Binomial Regression*. 2nd ed. Cambridge: Cambridge University Press, 2011.
 
-[35] Davis FD (1989) Perceived usefulness, perceived ease of use, and user acceptance of information technology. *MIS Quarterly* 13(3): 319-340.
+35. Davis FD. Perceived usefulness, perceived ease of use, and user acceptance of information technology. *MIS Quarterly* 1989; 13(3): 319–340.
 
-[36] Venkatesh V, Morris MG, Davis GB and Davis FD (2003) User acceptance of information technology: toward a unified view. *MIS Quarterly* 27(3): 425-478.
+36. Venkatesh V, Morris MG, Davis GB, et al. User acceptance of information technology: toward a unified view. *MIS Quarterly* 2003; 27(3): 425–478.
 
-[37] Mehrabian A and Russell JA (1974) *An Approach to Environmental Psychology*. Cambridge, MA: MIT Press.
+37. Mehrabian A and Russell JA. *An Approach to Environmental Psychology*. Cambridge, MA: MIT Press, 1974.
 
-[38] Xylogiannopoulos KF, Xanthopoulos P, Karampelas P and Bakamitsos GA (2024) ChatGPT paraphrased product reviews can confuse consumers and undermine their trust in genuine reviews. *Information Processing and Management* 61(6): 103842.
+38. Xylogiannopoulos KF, Xanthopoulos P, Karampelas P, et al. ChatGPT paraphrased product reviews can confuse consumers and undermine their trust in genuine reviews. *Information Processing & Management* 2024; 61(6): 103842.
 
-[39] Özyirmidokuz EK, Molu Elmas B and Stoica EA (2025) AI-based sentiment analysis of e-commerce customer feedback: a bilingual parallel study on the fast food industry. *Journal of Theoretical and Applied Electronic Commerce Research* 20(4): 294.
+39. Özyirmidokuz EK, Molu Elmas B and Stoica EA. AI-based sentiment analysis of e-commerce customer feedback: a bilingual parallel study on the fast food industry. *Journal of Theoretical and Applied Electronic Commerce Research* 2025; 20(4): 294.
 
-[40] Xie Y and Desouza KC (2025) Feeling grounded when watching live streaming shows of highly anthropomorphic interactive virtual influencers: an exploratory study on customer opinions. *Journal of Business Research* 199: 115507.
+40. Xie Y and Desouza KC. Feeling grounded when watching live streaming shows of highly anthropomorphic interactive virtual influencers: an exploratory study on customer opinions. *Journal of Business Research* 2025; 199: 115507.
 
-[41] Chattaraman V, Kwon WS, Gilbert JE and Ross K (2018) Should AI-based, conversational digital assistants employ social- or task-oriented interaction style? A task-competency and reciprocity perspective for older adults. *Computers in Human Behavior* 90: 315-330.
+41. Chattaraman V, Kwon WS, Gilbert JE, et al. Should AI-based, conversational digital assistants employ social- or task-oriented interaction style? A task-competency and reciprocity perspective for older adults. *Computers in Human Behavior* 2018; 90: 315–330.
 
-[42] Ameen N, Tarhini A, Reppel A and Anand A (2021) Customer experiences in the age of artificial intelligence. *Computers in Human Behavior* 114: 106548.
+42. Ameen N, Tarhini A, Reppel A, et al. Customer experiences in the age of artificial intelligence. *Computers in Human Behavior* 2021; 114: 106548.
 
-[43] Castelo N, Bos MW and Lehmann DR (2019) Task-dependent algorithm aversion. *Journal of Marketing Research* 56(5): 809-825.
+43. Castelo N, Bos MW and Lehmann DR. Task-dependent algorithm aversion. *Journal of Marketing Research* 2019; 56(5): 809–825.
 
-[44] Zupic I and Cater T (2015) Bibliometric methods in management and organization. *Organizational Research Methods* 18(3): 429-472.
+44. Zupic I and Cater T. Bibliometric methods in management and organization. *Organizational Research Methods* 2015; 18(3): 429–472.
 
-[45] Snyder H (2019) Literature review as a research methodology: an overview and guidelines. *Journal of Business Research* 104: 333-339.
+45. Snyder H. Literature review as a research methodology: an overview and guidelines. *Journal of Business Research* 2019; 104: 333–339.
 
-[46] Puntoni S, Reczek RW, Giesler M and Botti S (2021) Consumers and artificial intelligence: an experiential perspective. *Journal of Marketing* 85(1): 131-151.
+46. Puntoni S, Reczek RW, Giesler M, et al. Consumers and artificial intelligence: an experiential perspective. *Journal of Marketing* 2021; 85(1): 131–151.
 
-[47] Li R, Ma B, Zhang P and Gao X (2025) 电商AI主播特征影响消费者购买意愿的机制——基于技术感知与社会互动双重视角 [in Chinese]. 北京理工大学学报(社会科学版) 27(1): 127-144+187.
+47. Li R, Ma B, Zhang P, et al. The mechanism by which AI anchor characteristics influence consumers' purchase intention in e-commerce: a dual perspective of technology perception and social interaction [in Chinese]. *Journal of Beijing Institute of Technology (Social Sciences Edition)* 2025; 27(1): 127–144.
 
-[48] Wang C, Xu J, Qin H, Fu W and Shang Q (2023) 电商主播类型对消费者购买行为的影响：AI主播和真人主播 [in Chinese]. 管理科学 36(4): 30-43.
+48. Wang C, Xu J, Qin H, et al. The influence of anchor type on consumers' purchase behavior in e-commerce: AI anchors versus human anchors [in Chinese]. *Journal of Management Science* 2023; 36(4): 30–43.
 
-[49] Li S and Yang Z (2025) 基于BERT-BiLSTM-GAT的人工智能生成电商虚假评论识别研究 [in Chinese]. 管理学报 22(3): 557-567.
+49. Li S and Yang Z. Detecting AI-generated fake reviews in e-commerce based on BERT-BiLSTM-GAT [in Chinese]. *Chinese Journal of Management* 2025; 22(3): 557–567.
