@@ -9,8 +9,9 @@ This repository is provided for reproducibility and peer review. The data are re
 ## Contents
 
 ```
-data/        OpenAlex retrieval and screening snapshots (CSV, UTF-8)
-code/        Retrieval, statistical analysis and manuscript generation scripts
+data/        Final coded corpus (CSV, UTF-8)
+code/        Retrieval, statistical analysis, figure and manuscript scripts
+figures/     Publication figures (vector PDF + 600 dpi PNG)
 manuscript/  Manuscript source (Markdown) and the SAGE-formatted Word draft
 ```
 
@@ -50,14 +51,39 @@ Mixed-method work was assigned to the category on which its main contribution de
 - Annual counts and shares, with tie-corrected Mann-Kendall trend tests.
 - Negative binomial regressions of citation counts, controlling for log article age and journal, with journal-clustered standard errors (`code/nb2_cluster.py`).
 
+## Figures
+
+All three figures follow the SAGE/Journal of Information Science artwork
+requirements: double-column width (170 mm), Arial 8 pt, no title inside the
+image, bars starting at zero, and greyscale shades combined with hatched
+patterns so every category remains distinguishable in black-and-white print.
+Each figure is exported as vector PDF (for separate submission, which SAGE
+requires for artwork created outside Word) and as 600 dpi PNG (embedded in the
+Word draft). Captions stand alone and avoid colour words, because SAGE publishes
+figures in colour online but in black and white in print.
+
+| File | Content | Section |
+| --- | --- | --- |
+| `figures/Figure1_PRISMA.pdf` / `.png` | PRISMA flow, 1,449 records to 187 included articles | 3.2 |
+| `figures/Figure2_annual_methods.pdf` / `.png` | Annual stacked counts by method category, 2015-2026 | 4.3 |
+| `figures/Figure3_top_journals.pdf` / `.png` | The eight journals with seven or more articles | 4.4 |
+
+Figure 3 is limited to the eight journals with at least seven articles (121 of
+187): three journals tie at six articles, so a "top ten" cut at that boundary
+would be arbitrary. The citation regression is reported in Table 5 rather than
+plotted, following the convention that two or three coefficients do not warrant
+a figure.
+
 ## Reproducing the results
 
-Python 3.10 with `pandas`, `numpy`, `scipy` and (for the Word output) `python-docx`:
+Python 3.10 with `pandas`, `numpy`, `scipy`, `matplotlib` and (for the Word
+output) `python-docx`:
 
 ```
-pip install pandas numpy scipy python-docx
+pip install pandas numpy scipy matplotlib python-docx
 python code/analysis.py        # recompute distributions, trends, citations, NB2
-python code/gen_docx.py        # rebuild the Word draft from manuscript.md
+python code/make_figures.py    # rebuild all three figures (PDF + PNG)
+python code/gen_docx.py        # rebuild the Word draft from the Markdown source
 ```
 
 Run `code/analysis.py` from the directory that contains the data files, or adjust the input path at the top of the script.
